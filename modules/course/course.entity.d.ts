@@ -1,0 +1,38 @@
+import { CourseLearnFree } from '../course-learn-free/course-learn-free.entity';
+import { CourseLearnChoose } from '../course-learn-choose/course-learn-choose.entity';
+import { StudentsCourse } from '@/modules/students-course/students-course.entity';
+export declare class Course {
+    courseId: number;
+    courseName: string;
+    courseType: string;
+    courseStart: string;
+    courseEnd: string;
+    deleteAt: Date;
+    courseSynopsis?: string;
+    courseStyle: number;
+    courseNotice?: string;
+    courseTarget?: string;
+    courseStar: number;
+    courseRecycle: number;
+    coursePeriod: number;
+    courseAnswer: number;
+    courseComment: number;
+    courseFieldCommand: string;
+    courseCompleteCondition: number;
+    courseExam: string;
+    courseSetUp: number;
+    courseLearningTerminal: number;
+    courseWechat: number;
+    courseAudit: number;
+    courseCreditHour: string;
+    examId: string;
+    createAt: Date;
+    updateAt: Date;
+    courseFree: CourseLearnFree[];
+    courseChoose: CourseLearnChoose[];
+    finishNum: number;
+    participants: number;
+    unfinishNum: number;
+    passRate: string;
+    studentsCourse: StudentsCourse[];
+}

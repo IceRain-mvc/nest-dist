@@ -1,0 +1,31 @@
+import { TestOptions } from '../test-options/test-options.entity';
+import { TestQuestions } from '../test-questions/test-questions.entity';
+import { TreePerson } from '../tree-person/tree-person.entity';
+import { PaperBigQuestion } from '@/modules/paper-big-question/paper-big-question.entity';
+import { SmokeStrategy } from '@/modules/smoke-strategy/smoke-strategy.entity';
+import { QuestionSelectionStrategy } from '@/modules/question-selection-strategy/question-selection-strategy.entity';
+import { EachChapter } from '@/modules/exercise/exercise-each-chapter/exercise-each-chapter.entity';
+import { ExerBigChapter } from '@/modules/exercise/exercise-big-chapter/exercise-big-chapter.entity';
+export declare class TestBank {
+    id: number;
+    testOptions: TestOptions[];
+    testQuestions: TestQuestions[];
+    treePerson: TreePerson;
+    questionTypes: string;
+    examContent: string;
+    okanswer: string;
+    myanswer: string;
+    examTypes: string;
+    difficultyLevel: string;
+    gradeNum: number;
+    createAt: Date;
+    okanalysis: string;
+    isAnswerSort: string;
+    isKeyword: string;
+    paperBigQuestions: PaperBigQuestion[];
+    smokeStrategys: SmokeStrategy[];
+    strategys: QuestionSelectionStrategy[];
+    index?: number;
+    exerciseBigChapters: ExerBigChapter[];
+    eachExerse: EachChapter[];
+}
